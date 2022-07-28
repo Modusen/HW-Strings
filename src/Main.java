@@ -8,7 +8,7 @@ public class Main {
 
         System.out.println("Задание №1 + №2:");
         System.out.println("Введите Имя:");
-        String firstName = reader.readLine();
+        String firstName = reader.readLine().replace(('ё'), ('е')); //Так тоже работает! Найс!
         System.out.println("Введите Отчество:");
         String secondName = reader.readLine();
         System.out.println("Введите Фамилию:");
@@ -21,6 +21,6 @@ public class Main {
         System.out.println("Данные ФИО сотрудника для заполнения отчета — " + fullName.toUpperCase());
         //3rd task
         System.out.println("Данные ФИО сотрудника  — " + fullName.replace(('ё'), ('е')));
-
+        reader.close();
     }
 }
